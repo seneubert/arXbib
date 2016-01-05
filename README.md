@@ -38,6 +38,21 @@ arXbib.py [-o <bibfile to patch>] [-k <new bibtex key>] [-f] <arXiv ID>
 * `-k <new bibtex key>` allows to change the bibtex key from the default one.
 * `-f` forces the entry to be written to the bibfile, even if duplicate entries are detected (the key has to be unique, though). 
 
+## Installation
+Make a python3 environment by using [conda](http://conda.pydata.org/docs/install/quick.html#linux-miniconda-install):
+```
+conda create --name py3 python=3.4
+```
+Activate the environment:
+```
+source activate py3
+```
+Install `arxbib`
+```
+pip install git+https://github.com/seneubert/arXbib.git
+```
+you are good to go.
+
 
 ## Dependencies
-arXbib is written in Python3.4 and needs the [beautifulsoup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/) parser.
+`arXbib` is written in Python3.4 and needs the [beautifulsoup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/) parser.
