@@ -8,5 +8,10 @@ setup(name='arxbib',
       author_email='se.neubert@gmail.com',
       license='',
       packages=['arxbib'],
+      install_requires=['beautifulsoup4']
       scripts=['bin/arXbib.py'],
+      classifiers=[
+          'Development Status :: 0 - PreAlpha',
+          'Programming Language :: Python :: 3.4',
+      ],
       zip_safe=False)
