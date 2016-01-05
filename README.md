@@ -1,5 +1,6 @@
 # arXbib
-`arXbib` is a simple command line tool to generate [bibtex](http://www.bibtex.org/) entries from [arXiv](http://arxiv.org) identifiers, for example:
+`arXbib` is a simple command line tool to generate [bibtex](http://www.bibtex.org/) entries from [arXiv](http://arxiv.org) identifiers. It allows automatic patching of bibtex bibliography files, checking for double entries.
+
 ```
 > ./arXbib.py 1507.03414
 
