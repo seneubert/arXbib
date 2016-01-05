@@ -18,16 +18,23 @@ def main(argv) :
     key = ""
     force = False
 
+    helpstring = "arXbib.py [-o <bibfile to patch>] [-k <new bibtex key>] [-f] <arXiv ID>"
+
     try :
         opts, args = getopt.getopt(argv,"o:k:f")
     except getopt.GetoptError : 
-        print("arXbib.py [-o <bibfile to patch>] [-k <new bibtex key>] [-f] <arXiv ID>")
+        print(helpstring)
+        exit(1)
+        
+    if len(args)==0 :
+        print(helpstring)
+        exit(1)
         
     for opt,arg in opts :
         if opt=='-o' : bibfile = arg
         elif opt=='-k' : key = arg
         elif opt=='-f' : force = True
-
+        
     ID=args[0]    
 
         
