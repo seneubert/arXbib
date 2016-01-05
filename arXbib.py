@@ -28,7 +28,7 @@ def main(argv) :
         
     if len(args)==0 :
         print(helpstring)
-        exit(1)
+        exit(2)
         
     for opt,arg in opts :
         if opt=='-o' : bibfile = arg
