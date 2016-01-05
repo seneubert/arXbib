@@ -74,10 +74,11 @@ def main(argv) :
             exit(3)
 
     # get (and possibly replace) article bibID
-    bibID = lines[1][9:-1]
+    keyline=[(i,line) for i,line in enumerate(lines) if "@article" in line][0]
+    bibID = keyline[1][9:-1]
    
     if key!="" :
-        lines[1]=lines[1].replace(bibID,key)
+        lines[keyline[0]]=lines[keyline[0]].replace(bibID,key)
     else : key=bibID     
 
     # print bibtex entry to the console
